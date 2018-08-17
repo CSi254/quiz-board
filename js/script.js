@@ -82,15 +82,6 @@
     		document.getElementById('userScore').innerHTML = showScore;
     	};
 
-      $(document).ready(function() {
-            $(".clickable").click(function() {
-              $(".start").toggle();
-              $(".walrus-hidden").toggle();
-            });
-          });
-
-
-
 $(document).ready(function() {
 
 	$('#submitButton').click(function() {

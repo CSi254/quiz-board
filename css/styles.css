@@ -1,0 +1,17 @@
+h1{
+  color: blue;
+  font-size: 30px;
+  font-style: oblique;
+}
+h2{
+  color:orange;
+  font-size: 25px;
+  font-style: oblique;
+}
+#test{
+  background-color: pink;
+  border-left: 50px solid red;
+  border-right: 50px solid red;
+  border-top: 50px solid red;
+  border-bottom: 50px solid red;
+}
