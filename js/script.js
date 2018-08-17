@@ -1,7 +1,6 @@
 // first step
 	function submitQuiz() {
 		console.log('submitted');
-
 // calculate each score for each answer given
   function answerScore (qName) {
     var radiosNo = document.getElementsByName(qName);
@@ -11,4 +10,10 @@
 // do something with radiosNo
     	var answerValue = Number(radiosNo[i].value);
   	}
+}
+// change NaNs to zero
+	if (isNaN(answerValue)) {
+		answerValue = 0;
+	}
+	return answerValue;
 }
