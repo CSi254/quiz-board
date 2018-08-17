@@ -4,224 +4,234 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
     <title>Quiz Board</title>
   </head>
   <body>
-    <div>
-      <h1>Javascript Quiz Board</h1>
-        <p class="question">1.When does JavaScript code appear inline within an HTML file? </p>
+    <div id="test">
+      <div class="start">
+        <h1>All the best on your test</h1>
+        <h2>Javascript Quiz Board</h2>
+          <p>Click here</p>
+      </div>
+
+        <form id="Javascript">
+        <div>
+          <p class="question">1.When does JavaScript code appear inline within an HTML file? </p>
+
+            <ul>
+              <input class="answer" type="radio" name="q1" value="10">
+              <label id="correctString1">Between the “script” tag</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>Outside the “script” tag</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>None of the mentioned</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>Between or Outside the “script” tag</label>
+            </ul>
+
+        </div>
+
+        <div>
+          <p class="question">2.What will be done if more than one page requires a file of JavaScript code?</p>
+
+            <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>Downloads that many times</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>Must be re executed</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label> None of the mentioned</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="10">
+              <label id="correctString2"> Retrives from the browser cache</label>
+            </ul>
+
+        </div>
+
+        <div>
+          <p class="question">3. Which object is the main entry point to all client-side JavaScript features and APIs?</p>
+
+            <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label> Standard </label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3"> Window </label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label> Position</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>Location</label>
+           </ul>
+
+       </div>
+
+       <div>
+         <p class="question">4. What can be done in order to avoid creation of global variables in JavaScript?</p>
 
           <ul>
-	    	    <input class="answer" type="radio" name="q1" value="10">
-	          <label id="correctString1">Between the “script” tag</label>
-            <br>
-	          <input class="answer" type="radio" name="q1" value="0">
-	          <label>Outside the “script” tag</label>
-            <br>
-	          <input class="answer" type="radio" name="q1" value="0">
-	          <label>None of the mentioned</label>
-            <br>
-	          <input class="answer" type="radio" name="q1" value="0">
-	          <label>Between or Outside the “script” tag</label>
-    	    </ul>
-
-	  	</div>
-
-      <div>
-        <p class="question">2.What will be done if more than one page requires a file of JavaScript code?</p>
-
-          <ul>
-            <input class="answer" type="radio" name="q2" value="0">
-            <label>Downloads that many times</label>
-            <br>
-            <input class="answer" type="radio" name="q2" value="0">
-	          <label>Must be re executed</label>
-	          <br>
-	          <input class="answer" type="radio" name="q2" value="0">
-	          <label> None of the mentioned</label>
-            <br>
-	          <input class="answer" type="radio" name="q2" value="10">
-	          <label id="correctString2"> Retrives from the browser cache</label>
+             <input class="answer" type="radio" name="q4" value="1">
+             <label id="correctString4">To use an object as its namespace</label>
+             <br>
+             <input class="answer" type="radio" name="q4" value="0">
+             <label>To use an object that has the reference to all the variables</label>
+             <br>
+             <input class="answer" type="radio" name="q4" value="0">
+             <label> To use global functions</label>
+             <br>
+             <input class="answer" type="radio" name="q4" value="0">
+            <label>To use a method that defines all the variables</label>
           </ul>
 
       </div>
 
       <div>
-        <p class="question">3. Which object is the main entry point to all client-side JavaScript features and APIs?</p>
+          <p class="question">5. The behaviour of the instances present of a class inside a method is defined by</p>
 
           <ul>
-            <input class="answer" type="radio" name="q3" value="0">
-            <label> Standard </label>
+            <input class="answer" type="radio" name="q5" value="0">
+            <label>Method</label>
             <br>
-            <input class="answer" type="radio" name="q3" value="10">
-            <label id="correctString3"> Window </label>
+            <input class="answer" type="radio" name="q5" value="1">
+            <label id="correctString5"> Classes</label>
             <br>
-            <input class="answer" type="radio" name="q3" value="0">
-            <label> Position</label>
+            <input class="answer" type="radio" name="q5" value="0">
+            <label>Interfaces</label>
             <br>
-            <input class="answer" type="radio" name="q3" value="0">
-            <label>Location</label>
-         </ul>
+            <input class="answer" type="radio" name="q5" value="0">
+            <label> Classes and Interfaces</label>
+          </ul>
 
-     </div>
-
-     <div>
-       <p class="question">4. What can be done in order to avoid creation of global variables in JavaScript?</p>
-
-        <ul>
-           <input class="answer" type="radio" name="q4" value="10">
-	         <label id="correctString4">To use an object as its namespace</label>
-	         <br>
-	         <input class="answer" type="radio" name="q4" value="0">
-	         <label>To use an object that has the reference to all the variables</label>
-	         <br>
-	         <input class="answer" type="radio" name="q4" value="0">
-	         <label> To use global functions</label>
-           <br>
-           <input class="answer" type="radio" name="q4" value="0">
-	        <label>To use a method that defines all the variables</label>
-        </ul>
-
-    </div>
-
-    <div>
-        <p class="question">5. The behaviour of the instances present of a class inside a method is defined by</p>
-
-        <ul>
-          <input class="answer" type="radio" name="q5" value="0">
-          <label>Method</label>
-          <br>
-          <input class="answer" type="radio" name="q5" value="10">
-          <label id="correctString5"> Classes</label>
-          <br>
-          <input class="answer" type="radio" name="q5" value="0">
-          <label>Interfaces</label>
-          <br>
-          <input class="answer" type="radio" name="q5" value="0">
-          <label> Classes and Interfaces</label>
-        </ul>
-
-    </div>
-
-    <div>
-	  		<p class="question">6. The basic difference between JavaScript and Java is</p>
-
-	    	<ul>
-	        <input class="answer" type="radio" name="q6" value="0">
-	        <label>There is no difference</label>
-	        <br>
-          <input class="answer" type="radio" name="q6" value="0">
-	        <label>Variables are specific</label>
-	        <br>
-          <input class="answer" type="radio" name="q6" value="10">
-	        <label id="correctString6"> Functions are values, and there is no hard distinction between methods and fields</label>
-	        <br>
-          <input class="answer" type="radio" name="q6" value="0">
-	        <label>Functions are considered as fields</label>
-    		</ul>
-
-	  </div>
-
-    <div>
-	  		<p class="question">7. The keyword or the property that you use to refer to an object through which they were invoked is</p>
-
-	    	<ul>
-          <input class="answer" type="radio" name="q7" value="10">
-	        <label id="correctString7">this</label>
-	        <br>
-	        <input class="answer" type="radio" name="q7" value="0">
-	        <label>from</label>
-	        <br>
-	        <input class="answer" type="radio" name="q7" value="0">
-	        <label> to</label>
-	        <br>
-	        <input class="answer" type="radio" name="q7" value="0">
-	        <label>object</label>
-    		</ul>
-	  	</div>
+      </div>
 
       <div>
-      <p class="question">8. What is the default value of the type attribute?</p>
+          <p class="question">6. The basic difference between JavaScript and Java is</p>
 
-      <ul>
-        <input class="answer" type="radio" name="q8" value="0">
-        <label> text/css</label>
-        <br>
-        <input class="answer" type="radio" name="q8" value="10">
-        <label id="correctString8">text/javascript</label>
-        <br>
-        <input class="answer" type="radio" name="q8" value="0">
-        <label>text</label>
-        <br>
-        <input class="answer" type="radio" name="q8" value="0">
-        <label>xml</label>
-      </ul>
+          <ul>
+            <input class="answer" type="radio" name="q6" value="0">
+            <label>There is no difference</label>
+            <br>
+            <input class="answer" type="radio" name="q6" value="0">
+            <label>Variables are specific</label>
+            <br>
+            <input class="answer" type="radio" name="q6" value="1">
+            <label id="correctString6"> Functions are values, and there is no hard distinction between methods and fields</label>
+            <br>
+            <input class="answer" type="radio" name="q6" value="0">
+            <label>Functions are considered as fields</label>
+          </ul>
 
-    </div>
+      </div>
 
-    <div>
-	  		<p class="question">9.  How many default number methods are available in JavaScript?</p>
+      <div>
+          <p class="question">7. The keyword or the property that you use to refer to an object through which they were invoked is</p>
 
-	    	<ul>
-	        <input class="answer" type="radio" name="q9" value="0">
-	        <label>5</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="0">
-	        <label>6</label>
+          <ul>
+            <input class="answer" type="radio" name="q7" value="1">
+            <label id="correctString7">this</label>
+            <br>
+            <input class="answer" type="radio" name="q7" value="0">
+            <label>from</label>
+            <br>
+            <input class="answer" type="radio" name="q7" value="0">
+            <label> to</label>
+            <br>
+            <input class="answer" type="radio" name="q7" value="0">
+            <label>object</label>
+          </ul>
+        </div>
+
+        <div>
+        <p class="question">8. What is the default value of the type attribute?</p>
+
+        <ul>
+          <input class="answer" type="radio" name="q8" value="0">
+          <label> text/css</label>
           <br>
-	        <input class="answer" type="radio" name="q9" value="10">
-	        <label id="correctString9">7</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="0">
-	        <label>8</label>
-    		</ul>
-
-	  </div>
-
-    <div>
-	  		<p class="question">10. Which of the following attribute of form tag is not set by using document object in JavaScript?</p>
-
-	    	<ul>
-	        <input class="answer" type="radio" name="q10" value="0">
-	        <label> Enctype</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="0">
-	        <label> Enctype</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="0">
-	        <label> Action</label>
+          <input class="answer" type="radio" name="q8" value="1">
+          <label id="correctString8">text/javascript</label>
           <br>
-	        <input class="answer" type="radio" name="q10" value="10">
-	        <label id="correctString10">None of the mentioned</label>
-    		</ul>
+          <input class="answer" type="radio" name="q8" value="0">
+          <label>text</label>
+          <br>
+          <input class="answer" type="radio" name="q8" value="0">
+          <label>xml</label>
+        </ul>
 
-	  	</div>
+      </div>
 
-         <br/>
-         <div class="submitter">
-         <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-         type="submit" value="Submit" />
+      <div>
+          <p class="question">9.  How many default number methods are available in JavaScript?</p>
+
+          <ul>
+            <input class="answer" type="radio" name="q9" value="0">
+            <label>5</label>
+            <br>
+            <input class="answer" type="radio" name="q9" value="0">
+            <label>6</label>
+            <br>
+            <input class="answer" type="radio" name="q9" value="1">
+            <label id="correctString9">7</label>
+            <br>
+            <input class="answer" type="radio" name="q9" value="0">
+            <label>8</label>
+          </ul>
+
+      </div>
+
+      <div>
+          <p class="question">10. Which of the following attribute of form tag is not set by using document object in JavaScript?</p>
+
+          <ul>
+            <input class="answer" type="radio" name="q10" value="0">
+            <label> Enctype</label>
+            <br>
+            <input class="answer" type="radio" name="q10" value="0">
+            <label> Enctype</label>
+            <br>
+            <input class="answer" type="radio" name="q10" value="0">
+            <label> Action</label>
+            <br>
+            <input class="answer" type="radio" name="q10" value="1">
+            <label id="correctString10">None of the mentioned</label>
+          </ul>
+
+        </div>
+      </form>
+
+           <br/>
+           <div class="submitter">
+           <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+           type="submit" value="Submit" />
+     </div>
    </div>
 
-   <!-- show the right answers only to the wrong answers that have been submitted. -->
-        <div class="quizAnswers" id="correctAnswer1"></div>
-    	  <div class="quizAnswers" id="correctAnswer2"></div>
-        <div class="quizAnswers" id="correctAnswer3"></div>
-        <div class="quizAnswers" id="correctAnswer4"></div>
-        <div class="quizAnswers" id="correctAnswer5"></div>
-    	  <div class="quizAnswers" id="correctAnswer6"></div>
-        <div class="quizAnswers" id="correctAnswer7"></div>
-        <div class="quizAnswers" id="correctAnswer8"></div>
-        <div class="quizAnswers" id="correctAnswer9"></div>
-        <div class="quizAnswers" id="correctAnswer10"></div>
 
-        <!-- show score on submit -->
-    <div>
-    	<h2 class="quizScore" id="userScore"></h2>
+      </div>
     </div>
+    <div id="results">
 
-    <div id="results"></div>
+           <!-- show the right answers only to the wrong answers that have been submitted. -->
+                <div class="quizAnswers" id="correctAnswer1"></div>
+                <div class="quizAnswers" id="correctAnswer2"></div>
+                <div class="quizAnswers" id="correctAnswer3"></div>
+                <div class="quizAnswers" id="correctAnswer4"></div>
+                <div class="quizAnswers" id="correctAnswer5"></div>
+                <div class="quizAnswers" id="correctAnswer6"></div>
+                <div class="quizAnswers" id="correctAnswer7"></div>
+                <div class="quizAnswers" id="correctAnswer8"></div>
+                <div class="quizAnswers" id="correctAnswer9"></div>
+                <div class="quizAnswers" id="correctAnswer10"></div>
 
+                <!-- show score on submit -->
+              <h2 class="quizScore" id="userScore"></h2>
+    </div>
   </body>
 </html>
