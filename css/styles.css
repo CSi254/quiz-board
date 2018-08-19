@@ -1,17 +1,68 @@
-h1{
-  color: blue;
-  font-size: 30px;
+h1 {
+  color: inherit;
+  font-size: 50px;
   font-style: oblique;
+  font-weight: bold;
+  text-align: center;
 }
 h2{
-  color:orange;
+  color:blue;
   font-size: 25px;
   font-style: oblique;
+  text-align: center;
 }
-#test{
+
+input.quizSubmit[type="submit"] {
+  color: #ffffff;
+  background-color: #c30b0a;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-transform:uppercase;
+  height:35px;
+  width:85px;
+  border: 1px solid #5E5E5E;
+  border-radius:5px;
+ }
+
+ body{
+   background-color: #ecc;
+ }
+
+.container{
+  width: 60%;
+  background: #aae;
+  margin: 20px auto;
+  overflow: auto;
+  padding: 25px;
+  border-radius: 70px;
+}
+
+.question{
+  color: black;
+  font-size: 17px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.well{
   background-color: pink;
-  border-left: 50px solid red;
-  border-right: 50px solid red;
-  border-top: 50px solid red;
-  border-bottom: 50px solid red;
+  color: purple;
+}
+
+
+#results{
+  width: 80%;
+  background: pink;
+  margin: 200px auto;
+  overflow: auto;
+  padding: 25px;
+  border-radius: 70px;
+  color: purple
+}
+#userScore{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: white
 }
