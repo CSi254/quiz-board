@@ -15,6 +15,7 @@ I used HTML, JavaScript, CSS and JS.
 ## Support and contact details
 If you run into any issues or have questions, ideas or concerns contact me via email @wangarelubega@gmail.com
 ## Specifications
+https://trishkare.github.io/quiz-board/
 ## Behaviour Driven Development
 When one has not put in any input the results page will show you a score of zeo out of ten.
   Input Example:no Input
