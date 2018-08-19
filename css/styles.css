@@ -12,6 +12,17 @@ h2{
   text-align: center;
 }
 
+img {
+  width: 100px;
+  float:left;
+}
+
+.watermark {
+    opacity: 0.5;
+    bottom: 0;
+    right: 0;
+}
+
 input.quizSubmit[type="submit"] {
   color: #ffffff;
   background-color: #c30b0a;
